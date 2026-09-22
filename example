@@ -1,0 +1,5 @@
+local remote = game:GetService("ReplicatedStorage")["01_server"]
+local function cmd(command)
+	remote:FireServer("cmd", "-"..command)
+end
+cmd("pd")
